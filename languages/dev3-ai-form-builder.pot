@@ -1,0 +1,4718 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Form Builder for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-form-builder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T00:48:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-form-builder\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-form-builder.php
+msgid "DEV3 AI Form Builder for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-form-builder.php
+msgid "https://dev3.tech/item/dev3-ai-form-builder"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-form-builder.php
+msgid "Drag-and-drop form builder with multi-step, logic, calculations, payments, entries and DEV3 AI form generation, entry intelligence and spam shield."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-form-builder.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-form-builder.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:45
+msgid "DEV3 AI Forms"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:47
+#: build/admin.js:1
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:48
+#: build/admin.js:1
+msgid "All forms"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:49
+msgid "Add new"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:50
+#: build/admin.js:1
+msgid "Entries"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:51
+#: build/admin.js:1
+msgid "Spam shield"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:52
+#: build/admin.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:89
+#: includes/Forms/Form_Repository.php:28
+#: build/admin.js:1
+msgid "Forms"
+msgstr ""
+
+#: includes/AI/Auto_Reply.php:38
+#: includes/AI/Auto_Reply.php:85
+#: includes/AI/Entry_Insights.php:51
+#: includes/Delivery/Dispatcher.php:90
+#: includes/Rest/Entries_Controller.php:207
+#: includes/Rest/Entries_Controller.php:391
+msgid "Entry not found."
+msgstr ""
+
+#: includes/AI/Auto_Reply.php:41
+#: includes/AI/Auto_Reply.php:89
+msgid "This entry has no email address to reply to."
+msgstr ""
+
+#: includes/AI/Auto_Reply.php:94
+msgid "Add a subject and a message."
+msgstr ""
+
+#: includes/AI/Auto_Reply.php:104
+msgid "The email could not be sent. Check your site's mail settings."
+msgstr ""
+
+#. translators: 1: percent, 2: field label
+#: includes/AI/Conversion_Advisor.php:46
+#: includes/AI/Conversion_Advisor.php:56
+#, php-format
+msgid "%1$d%% of visitors who gave up stopped at \"%2$s\"."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:47
+msgid "Make this field optional, or explain why you need it."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:57
+msgid "Add a short help text so visitors know what to enter."
+msgstr ""
+
+#. translators: %d: number of fields
+#: includes/AI/Conversion_Advisor.php:69
+#, php-format
+msgid "This form shows %d fields on one page."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:70
+msgid "Split it into 2-3 steps; multi-step forms usually convert better when they are long."
+msgstr ""
+
+#. translators: %d: percent
+#: includes/AI/Conversion_Advisor.php:80
+#, php-format
+msgid "Only %d%% of visitors start the form."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:81
+msgid "Make the first question easy (a choice instead of free text) and place the form higher on the page."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:201
+msgid "This suggestion has no automatic fix."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:222
+msgid "Why we ask: this helps us answer you faster."
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:238
+msgid "A few more details"
+msgstr ""
+
+#: includes/AI/Conversion_Advisor.php:267
+msgid "(before any field)"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:55
+#: includes/Forms/Form_Repository.php:116
+#: includes/Forms/Form_Repository.php:152
+#: includes/Rest/Entries_Controller.php:368
+#: includes/Rest/Forms_Controller.php:207
+msgid "Form not found."
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:161
+msgid "left a phone number"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:167
+msgid "uses a company email"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:172
+msgid "named a company"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:176
+msgid "shared a budget"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:181
+msgid "mentions buying intent"
+msgstr ""
+
+#: includes/AI/Entry_Insights.php:193
+msgid "Little buying signal in the answers."
+msgstr ""
+
+#: includes/AI/Form_Generator.php:31
+msgid "Describe the form in at least a few words."
+msgstr ""
+
+#: includes/AI/Form_Generator.php:123
+msgid "The AI returned no usable fields."
+msgstr ""
+
+#: includes/AI/Form_Generator.php:135
+#: includes/Forms/Definition.php:743
+#: includes/Submission/Submission_Handler.php:195
+msgid "Thanks! Your submission has been received."
+msgstr ""
+
+#: includes/AI/Form_Generator.php:139
+#: build/admin.js:1
+msgid "New form"
+msgstr ""
+
+#: includes/AI/Translator.php:33
+msgid "Pick a language."
+msgstr ""
+
+#: includes/AI/Translator.php:37
+msgid "This form has no text to translate yet."
+msgstr ""
+
+#. translators: %s: key
+#: includes/AI/Translator.php:127
+#, php-format
+msgid "Kept the original text for %s because a merge tag was lost."
+msgstr ""
+
+#. translators: %d: count
+#: includes/AI/Translator.php:141
+#, php-format
+msgid "%d string was not translated and keeps the original text."
+msgid_plural "%d strings were not translated and keep the original text."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: build/admin.js:1
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Entry_Privacy.php:25
+#: includes/Data/Entry_Privacy.php:26
+#: includes/Data/Entry_Privacy.php:77
+msgid "Form entries"
+msgstr ""
+
+#: includes/Data/Entry_Privacy.php:61
+#: includes/Forms/Form_Repository.php:29
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Form"
+msgstr ""
+
+#: includes/Data/Entry_Privacy.php:65
+#: build/admin.js:1
+msgid "Submitted"
+msgstr ""
+
+#: includes/Delivery/Integrations.php:47
+msgid "Sent."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:179
+msgid "Add a Mailchimp API key (it ends in -usXX) in Settings → Integrations."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:204
+msgid "Mailchimp: choose an audience and map the email field."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:255
+msgid "Add a Brevo API key in Settings → Integrations."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:281
+msgid "Brevo: map the email field."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:312
+msgid "Add a HubSpot private app token in Settings → Integrations."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:336
+msgid "HubSpot: map the email field."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:370
+msgid "Add the web app / webhook URL."
+msgstr ""
+
+#. translators: %d: number of audiences
+#: includes/Delivery/Integrations.php:408
+#, php-format
+msgid "Connected. %d audiences found."
+msgstr ""
+
+#. translators: %d: number of lists
+#: includes/Delivery/Integrations.php:426
+#, php-format
+msgid "Connected. %d lists found."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:436
+msgid "Connected to HubSpot."
+msgstr ""
+
+#: includes/Delivery/Integrations.php:440
+msgid "Unknown integration."
+msgstr ""
+
+#: includes/Forms/Definition.php:155
+msgid "Submit"
+msgstr ""
+
+#: includes/Forms/Definition.php:156
+msgid "Next"
+msgstr ""
+
+#: includes/Forms/Definition.php:157
+msgid "Back"
+msgstr ""
+
+#: includes/Forms/Definition.php:160
+#: build/admin.js:1
+msgid "Save and continue later"
+msgstr ""
+
+#: includes/Forms/Definition.php:164
+msgid "This form is closed."
+msgstr ""
+
+#: includes/Forms/Definition.php:166
+msgid "Please log in to fill in this form."
+msgstr ""
+
+#: includes/Forms/Definition.php:334
+msgid "Removed empty steps."
+msgstr ""
+
+#. translators: %s: field label
+#: includes/Forms/Definition.php:358
+#, php-format
+msgid "Cleared an invalid formula in \"%s\"."
+msgstr ""
+
+#. translators: 1: field label, 2: unknown type
+#: includes/Forms/Definition.php:449
+#, php-format
+msgid "Changed \"%1$s\" from unknown type \"%2$s\" to single line text."
+msgstr ""
+
+#. translators: %s: field label
+#: includes/Forms/Definition.php:494
+#, php-format
+msgid "Added placeholder options to \"%s\"."
+msgstr ""
+
+#: includes/Forms/Definition.php:495
+msgid "Option 1"
+msgstr ""
+
+#: includes/Forms/Definition.php:495
+msgid "Option 2"
+msgstr ""
+
+#: includes/Forms/Definition.php:537
+#: build/admin.js:1
+msgid "Not likely"
+msgstr ""
+
+#: includes/Forms/Definition.php:538
+#: build/admin.js:1
+msgid "Very likely"
+msgstr ""
+
+#: includes/Forms/Definition.php:573
+#: includes/Submission/Entry_Format.php:59
+#: build/admin.js:1
+msgid "Yes"
+msgstr ""
+
+#: includes/Forms/Definition.php:574
+#: includes/Submission/Entry_Format.php:59
+#: build/admin.js:1
+msgid "No"
+msgstr ""
+
+#. translators: 1: number of rules, 2: label
+#: includes/Forms/Definition.php:658
+#, php-format
+msgid "Removed %1$d logic rule on \"%2$s\" that pointed to a missing or later field."
+msgid_plural "Removed %1$d logic rules on \"%2$s\" that pointed to missing or later fields."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Forms/Definition.php:730
+#: includes/Forms/Definition.php:741
+msgid "Default confirmation"
+msgstr ""
+
+#: includes/Forms/Definition.php:777
+msgid "Admin notification"
+msgstr ""
+
+#: includes/Forms/Definition.php:779
+msgid "New entry: {form_title}"
+msgstr ""
+
+#: includes/Forms/Definition.php:792
+#: build/admin.js:1
+msgid "Notification"
+msgstr ""
+
+#: includes/Forms/Definition.php:825
+#: build/admin.js:1
+msgid "Webhook"
+msgstr ""
+
+#: includes/Forms/Form_Repository.php:110
+#: includes/Rest/Forms_Controller.php:188
+#: build/admin.js:1
+msgid "Untitled form"
+msgstr ""
+
+#. translators: %s: form title
+#: includes/Forms/Form_Repository.php:157
+#, php-format
+msgid "%s (copy)"
+msgstr ""
+
+#: includes/Forms/Templates.php:40
+msgid "Contact form"
+msgstr ""
+
+#: includes/Forms/Templates.php:41
+msgid "Name, email, subject and message with paste-to-fill."
+msgstr ""
+
+#: includes/Forms/Templates.php:51
+#: build/admin.js:1
+msgid "Your name"
+msgstr ""
+
+#: includes/Forms/Templates.php:57
+#: includes/Forms/Templates.php:195
+#: includes/Forms/Templates.php:302
+#: includes/Forms/Templates.php:425
+#: includes/Forms/Templates.php:513
+#: build/admin.js:1
+msgid "Email"
+msgstr ""
+
+#: includes/Forms/Templates.php:64
+#: includes/Forms/Templates.php:309
+#: includes/Forms/Templates.php:520
+#: build/admin.js:1
+msgid "Phone"
+msgstr ""
+
+#: includes/Forms/Templates.php:70
+msgid "Topic"
+msgstr ""
+
+#: includes/Forms/Templates.php:71
+msgid "General question"
+msgstr ""
+
+#: includes/Forms/Templates.php:71
+msgid "Sales"
+msgstr ""
+
+#: includes/Forms/Templates.php:71
+#: build/admin.js:1
+msgid "Support"
+msgstr ""
+
+#: includes/Forms/Templates.php:71
+#: includes/Forms/Templates.php:108
+#: includes/Forms/Templates.php:120
+#: build/admin.js:1
+msgid "Other"
+msgstr ""
+
+#: includes/Forms/Templates.php:76
+#: build/admin.js:1
+msgid "Message"
+msgstr ""
+
+#: includes/Forms/Templates.php:83
+msgid "Privacy"
+msgstr ""
+
+#: includes/Forms/Templates.php:84
+msgid "I agree that my details are stored to answer my request."
+msgstr ""
+
+#: includes/Forms/Templates.php:94
+msgid "Quote request (multi-step)"
+msgstr ""
+
+#: includes/Forms/Templates.php:95
+msgid "Three steps: project, budget and contact, with conditional logic."
+msgstr ""
+
+#: includes/Forms/Templates.php:101
+msgid "Your project"
+msgstr ""
+
+#: includes/Forms/Templates.php:106
+msgid "What do you need?"
+msgstr ""
+
+#: includes/Forms/Templates.php:108
+msgid "New website"
+msgstr ""
+
+#: includes/Forms/Templates.php:108
+msgid "Online shop"
+msgstr ""
+
+#: includes/Forms/Templates.php:108
+msgid "Redesign"
+msgstr ""
+
+#: includes/Forms/Templates.php:113
+msgid "Please describe"
+msgstr ""
+
+#: includes/Forms/Templates.php:128
+msgid "Project details"
+msgstr ""
+
+#: includes/Forms/Templates.php:133
+msgid "Budget & timing"
+msgstr ""
+
+#: includes/Forms/Templates.php:138
+msgid "Budget"
+msgstr ""
+
+#: includes/Forms/Templates.php:145
+msgid "Ideal launch date"
+msgstr ""
+
+#: includes/Forms/Templates.php:150
+#: includes/Forms/Templates.php:502
+#: build/admin.js:1
+msgid "Contact"
+msgstr ""
+
+#: includes/Forms/Templates.php:155
+#: includes/Forms/Templates.php:507
+#: build/admin.js:1
+msgid "Name"
+msgstr ""
+
+#: includes/Forms/Templates.php:161
+msgid "Work email"
+msgstr ""
+
+#: includes/Forms/Templates.php:168
+#: build/admin.js:1
+msgid "Company"
+msgstr ""
+
+#: includes/Forms/Templates.php:178
+msgid "Event registration"
+msgstr ""
+
+#: includes/Forms/Templates.php:179
+msgid "Tickets with prices, quantity, total and Stripe/PayPal payment."
+msgstr ""
+
+#: includes/Forms/Templates.php:189
+msgid "Attendee name"
+msgstr ""
+
+#: includes/Forms/Templates.php:201
+msgid "Ticket"
+msgstr ""
+
+#: includes/Forms/Templates.php:205
+msgid "Standard"
+msgstr ""
+
+#: includes/Forms/Templates.php:209
+msgid "VIP"
+msgstr ""
+
+#: includes/Forms/Templates.php:217
+msgid "Number of tickets"
+msgstr ""
+
+#: includes/Forms/Templates.php:226
+msgid "Total"
+msgstr ""
+
+#: includes/Forms/Templates.php:239
+msgid "Customer feedback (NPS)"
+msgstr ""
+
+#: includes/Forms/Templates.php:240
+msgid "NPS, star rating and a follow-up question shown for low scores."
+msgstr ""
+
+#: includes/Forms/Templates.php:250
+msgid "How likely are you to recommend us to a friend?"
+msgstr ""
+
+#: includes/Forms/Templates.php:256
+msgid "What could we do better?"
+msgstr ""
+
+#: includes/Forms/Templates.php:271
+msgid "Rate our support"
+msgstr ""
+
+#: includes/Forms/Templates.php:276
+msgid "Email (optional, if you want a reply)"
+msgstr ""
+
+#: includes/Forms/Templates.php:284
+#: build/admin.js:1
+msgid "Job application"
+msgstr ""
+
+#: includes/Forms/Templates.php:285
+msgid "CV upload, position, experience and signature."
+msgstr ""
+
+#: includes/Forms/Templates.php:291
+msgid "About you"
+msgstr ""
+
+#: includes/Forms/Templates.php:296
+msgid "Full name"
+msgstr ""
+
+#: includes/Forms/Templates.php:315
+msgid "LinkedIn profile"
+msgstr ""
+
+#: includes/Forms/Templates.php:320
+msgid "The role"
+msgstr ""
+
+#: includes/Forms/Templates.php:325
+msgid "Position"
+msgstr ""
+
+#: includes/Forms/Templates.php:327
+msgid "Frontend developer"
+msgstr ""
+
+#: includes/Forms/Templates.php:327
+msgid "Backend developer"
+msgstr ""
+
+#: includes/Forms/Templates.php:327
+msgid "Designer"
+msgstr ""
+
+#: includes/Forms/Templates.php:327
+msgid "Project manager"
+msgstr ""
+
+#: includes/Forms/Templates.php:332
+msgid "Years of experience"
+msgstr ""
+
+#: includes/Forms/Templates.php:339
+msgid "CV (PDF)"
+msgstr ""
+
+#: includes/Forms/Templates.php:347
+#: build/admin.js:1
+msgid "Signature"
+msgstr ""
+
+#: includes/Forms/Templates.php:348
+msgid "Sign to confirm that the information is correct."
+msgstr ""
+
+#: includes/Forms/Templates.php:357
+msgid "Price calculator"
+msgstr ""
+
+#: includes/Forms/Templates.php:358
+msgid "Live calculation with a formula, shown as the visitor types."
+msgstr ""
+
+#: includes/Forms/Templates.php:368
+msgid "Area (m²)"
+msgstr ""
+
+#: includes/Forms/Templates.php:376
+msgid "Finish"
+msgstr ""
+
+#: includes/Forms/Templates.php:380
+#: build/admin.js:1
+msgid "Basic"
+msgstr ""
+
+#: includes/Forms/Templates.php:384
+msgid "Premium"
+msgstr ""
+
+#: includes/Forms/Templates.php:392
+#: build/admin.js:1
+msgid "Estimated price"
+msgstr ""
+
+#: includes/Forms/Templates.php:399
+msgid "Send me the quote"
+msgstr ""
+
+#: includes/Forms/Templates.php:408
+msgid "Newsletter signup"
+msgstr ""
+
+#: includes/Forms/Templates.php:409
+msgid "Email + consent, ready for Mailchimp or Brevo."
+msgstr ""
+
+#: includes/Forms/Templates.php:419
+#: includes/Frontend/Renderer.php:548
+#: build/admin.js:1
+msgid "First name"
+msgstr ""
+
+#: includes/Forms/Templates.php:432
+#: build/admin.js:1
+msgid "Consent"
+msgstr ""
+
+#: includes/Forms/Templates.php:433
+msgid "Yes, send me news and offers. I can unsubscribe at any time."
+msgstr ""
+
+#: includes/Forms/Templates.php:439
+msgid "Subscribe"
+msgstr ""
+
+#: includes/Forms/Templates.php:444
+msgid "Appointment request"
+msgstr ""
+
+#: includes/Forms/Templates.php:445
+msgid "Date, time, service and address with a conditional step."
+msgstr ""
+
+#: includes/Forms/Templates.php:451
+msgid "Appointment"
+msgstr ""
+
+#: includes/Forms/Templates.php:456
+msgid "Service"
+msgstr ""
+
+#: includes/Forms/Templates.php:458
+msgid "Consultation"
+msgstr ""
+
+#: includes/Forms/Templates.php:458
+msgid "Repair"
+msgstr ""
+
+#: includes/Forms/Templates.php:458
+msgid "Installation"
+msgstr ""
+
+#: includes/Forms/Templates.php:463
+msgid "Preferred date"
+msgstr ""
+
+#: includes/Forms/Templates.php:470
+msgid "Preferred time"
+msgstr ""
+
+#: includes/Forms/Templates.php:476
+msgid "Visit at my address"
+msgstr ""
+
+#: includes/Forms/Templates.php:481
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: includes/Forms/Templates.php:496
+#: build/admin.js:1
+msgid "Address"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:172
+msgid "Form not found. Pick a form in the block settings."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:214
+msgid "This saved form has expired. Please start again."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:229
+msgid "The payment was cancelled. You can try again."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:232
+msgid "Thanks! We are waiting for the payment confirmation and will email you shortly."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:235
+msgid "We could not confirm the payment. If you were charged, please contact us."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:337
+msgid "You are not allowed to preview this form."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:354
+msgid "Preview: submissions are saved as real entries."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:212
+#: includes/Submission/Submission_Handler.php:267
+msgid "Please fix the highlighted fields."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:213
+msgid "Something went wrong. Please check your connection and try again."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:214
+msgid "Saved. Use this link to continue later:"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:215
+msgid "Saved. We also emailed you this link to continue later:"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:216
+msgid "Copy link"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:217
+msgid "Paste a little more text first."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:218
+msgid "Reading your details…"
+msgstr ""
+
+#. translators: %d: number of fields
+#: includes/Frontend/Renderer.php:220
+#, php-format
+msgid "Filled %d fields. Please check them."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:221
+msgid "No new details found in the text."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:222
+msgid "Autofill is unavailable right now. Please fill the form by hand."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:223
+msgid "Undone."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:279
+msgid "Leave this field empty"
+msgstr ""
+
+#. translators: %d: step number
+#. translators: %d: step
+#: includes/Frontend/Renderer.php:302
+#: includes/Frontend/Renderer.php:373
+#: build/admin.js:1
+#, php-format,js-format
+msgid "Step %d"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:318
+msgid "Pay with"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:320
+msgid "Card"
+msgstr ""
+
+#. translators: 1: current step, 2: total steps
+#: includes/Frontend/Renderer.php:380
+#, php-format
+msgid "Step %1$d of %2$d"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:394
+msgid "Paste your details to fill the form automatically"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:396
+msgid "Paste an email signature, a message or your contact details"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:398
+msgid "Fill the form"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:399
+msgid "Undo"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:401
+msgid "Only empty fields are filled. Please check them before you submit."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:517
+#: includes/Frontend/Renderer.php:560
+#: build/admin.js:1
+msgid "Choose…"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:549
+#: build/admin.js:1
+msgid "Last name"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:554
+#: build/admin.js:1
+msgid "Street address"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:555
+msgid "Apartment, suite, etc."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:556
+#: build/admin.js:1
+msgid "City"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:557
+msgid "State / Region"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:558
+#: build/admin.js:1
+msgid "Postal code"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:560
+#: build/admin.js:1
+msgid "Country"
+msgstr ""
+
+#. translators: 1: extensions, 2: size in MB
+#: includes/Frontend/Renderer.php:569
+#, php-format
+msgid "%1$s · max %2$s MB"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:572
+msgid "Signature pad: draw with your mouse or finger"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:574
+msgid "Sign above"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:574
+msgid "Clear"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:575
+msgid "Signing needs JavaScript."
+msgstr ""
+
+#. translators: 1: stars, 2: max
+#: includes/Frontend/Renderer.php:581
+#, php-format
+msgid "%1$d of %2$d"
+msgstr ""
+
+#: includes/Payments/Payments.php:91
+msgid "Online payment is not available right now. Please contact us."
+msgstr ""
+
+#: includes/Payments/Payments.php:106
+msgid "We could not start the payment. Please try again."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:171
+msgid "Invalid request."
+msgstr ""
+
+#: includes/Rest/Entries_Controller.php:123
+#: includes/Rest/Entries_Controller.php:249
+msgid "(deleted form)"
+msgstr ""
+
+#: includes/Rest/Entries_Controller.php:328
+msgid "Choose entries and an action."
+msgstr ""
+
+#: includes/Rest/Entries_Controller.php:364
+msgid "Choose a form to export."
+msgstr ""
+
+#: includes/Rest/Entries_Controller.php:425
+msgid "File not found."
+msgstr ""
+
+#: includes/Rest/Forms_Controller.php:179
+msgid "Unknown template."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:172
+msgid "Saving is not available for this form."
+msgstr ""
+
+#. translators: %s: form title
+#: includes/Rest/Public_Controller.php:192
+#, php-format
+msgid "Continue your form: %s"
+msgstr ""
+
+#. translators: 1: link, 2: days
+#: includes/Rest/Public_Controller.php:194
+#, php-format
+msgid ""
+"Use this link to continue where you left off:\n"
+"\n"
+"%1$s\n"
+"\n"
+"The link works for %2$d days."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:216
+#: includes/Rest/Public_Controller.php:267
+msgid "Unknown form."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:274
+msgid "This feature is not enabled for this form."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:278
+#: includes/Rest/Public_Controller.php:288
+msgid "Autofill is unavailable right now."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:282
+msgid "The text is too short."
+msgstr ""
+
+#: includes/Settings.php:43
+msgid "Your message looks like spam and was not sent. If this is a mistake, please contact us another way."
+msgstr ""
+
+#: includes/Spam/Spam_Gate.php:45
+msgid "The hidden honeypot field was filled in (bot)."
+msgstr ""
+
+#: includes/Spam/Spam_Gate.php:51
+msgid "Submitted faster than a person can fill the form."
+msgstr ""
+
+#: includes/Spam/Spam_Gate.php:54
+#: includes/Spam/Spam_Gate.php:106
+msgid "Too many submissions from the same address in a minute."
+msgstr ""
+
+#: includes/Spam/Spam_Gate.php:130
+msgid "We could not verify your submission right now. Please try again in a few minutes."
+msgstr ""
+
+#: includes/Submission/Entry_Format.php:55
+msgid "(signed)"
+msgstr ""
+
+#: includes/Submission/Entry_Format.php:61
+msgid "Agreed"
+msgstr ""
+
+#: includes/Submission/Form_Token.php:59
+#: includes/Submission/Form_Token.php:63
+msgid "This form is out of date. Reload the page and try again."
+msgstr ""
+
+#: includes/Submission/Submission_Handler.php:212
+msgid "This form no longer exists."
+msgstr ""
+
+#: includes/Submission/Submission_Handler.php:246
+msgid "Too many submissions. Please wait a moment."
+msgstr ""
+
+#: includes/Submission/Submission_Handler.php:280
+msgid "Your submission could not be sent."
+msgstr ""
+
+#. translators: %d: max files
+#: includes/Submission/Uploads.php:87
+#, php-format
+msgid "You can upload %d file."
+msgid_plural "You can upload up to %d files."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Submission/Uploads.php:93
+msgid "The file could not be uploaded. Try again."
+msgstr ""
+
+#. translators: %s: size in MB
+#: includes/Submission/Uploads.php:97
+#, php-format
+msgid "Files must be smaller than %s MB."
+msgstr ""
+
+#. translators: %s: allowed extensions
+#: includes/Submission/Uploads.php:102
+#, php-format
+msgid "Allowed file types: %s."
+msgstr ""
+
+#: includes/Submission/Uploads.php:106
+msgid "This file type is not allowed."
+msgstr ""
+
+#: includes/Submission/Validator.php:27
+msgid "This field is required."
+msgstr ""
+
+#: includes/Submission/Validator.php:28
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Submission/Validator.php:29
+msgid "Enter a valid web address."
+msgstr ""
+
+#: includes/Submission/Validator.php:30
+msgid "Enter a valid phone number."
+msgstr ""
+
+#: includes/Submission/Validator.php:31
+msgid "Enter a number."
+msgstr ""
+
+#: includes/Submission/Validator.php:32
+msgid "The value is too small."
+msgstr ""
+
+#: includes/Submission/Validator.php:33
+msgid "The value is too large."
+msgstr ""
+
+#: includes/Submission/Validator.php:34
+msgid "Choose one of the options."
+msgstr ""
+
+#: includes/Submission/Validator.php:35
+msgid "Enter a valid date."
+msgstr ""
+
+#: includes/Submission/Validator.php:36
+msgid "Enter a valid time."
+msgstr ""
+
+#: includes/Submission/Validator.php:37
+msgid "The text is too long."
+msgstr ""
+
+#: includes/Submission/Validator.php:38
+msgid "Please agree to continue."
+msgstr ""
+
+#: includes/Submission/Validator.php:39
+msgid "Choose a colour."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background job"
+msgstr ""
+
+#. translators: 1: processed, 2: total, 3: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$s of %2$s processed (%3$s%%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starting…"
+msgstr ""
+
+#. translators: %s: failed count
+#: build/admin.js:1
+#, js-format
+msgid "%s failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resume"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Retry failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show failed items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3FB_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3FB_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#. translators: %s: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Professional"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Short & to the point"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apologetic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Enthusiastic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sales lead"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quote request"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Feedback"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Complaint"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Booking"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Partnership"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Newsletter"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Spam"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lead score"
+msgstr ""
+
+#. translators: %s: urgency
+#: build/admin.js:1
+#, js-format
+msgid "%s urgency"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Intent:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Rule-based score"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Re-analyze"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No insights yet for this entry."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Analyze with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quick score (no AI)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "This entry has no email address, so there is no one to reply to."
+msgstr ""
+
+#. translators: %s: email
+#: build/admin.js:1
+#, js-format
+msgid "DEV3 AI drafts a reply to %s in their language. You edit and approve it; nothing is sent without your click."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Facts to include (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. We can start on 12 May; our starter package is $1,900."
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI never invents prices or promises; add them here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft a reply with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI · reply draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Subject"
+msgstr ""
+
+#. translators: %s: email
+#: build/admin.js:1
+#, js-format
+msgid "Reply sent to %s."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send reply"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sent again. See the activity log for details."
+msgstr ""
+
+#. translators: %d: entry id
+#. translators: %d: id
+#. translators: %d: entry
+#: build/admin.js:1
+#, js-format
+msgid "Entry #%d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entry"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starred"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Star"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Moved to inbox."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not spam"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marked as spam."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Restored."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Restore"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Moved to trash."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Trash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replied"
+msgstr ""
+
+#. translators: %s: reason
+#: build/admin.js:1
+#, js-format
+msgid "Spam shield: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI insights"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Answers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reply"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Activity"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entry sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Files"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submitted on"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resend emails"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resend to integrations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resend webhooks"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a private note"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Note added."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add note"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing logged yet."
+msgstr ""
+
+#. translators: %d: entries
+#: build/admin.js:1
+#, js-format
+msgid "%d entries in the last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Today"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How your forms are doing."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe a form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Google Gemini API key to describe forms in plain words, score leads, draft replies, translate forms and stop spam. The form builder works without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entries (30 days)"
+msgstr ""
+
+#. translators: %d: unread
+#: build/admin.js:1
+#, js-format
+msgid "%d unread"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conversion"
+msgstr ""
+
+#. translators: %d: views
+#: build/admin.js:1
+#, js-format
+msgid "%d form views"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Active forms"
+msgstr ""
+
+#. translators: %d: forms
+#: build/admin.js:1
+#, js-format
+msgid "%d in total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Spam stopped"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entries per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All entries"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top forms"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No forms yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conv."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Latest entries"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open inbox"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No entries yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embed a form with the \"DEV3 AI Form\" block or its shortcode to start collecting."
+msgstr ""
+
+#: build/admin.js:1
+msgid "From"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lead"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sentiment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Received"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build, embed and analyse your forms."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search forms"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search forms…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template, a blank form, or describe it and let DEV3 AI build it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create your first form"
+msgstr ""
+
+#. translators: 1: fields, 2: steps
+#: build/admin.js:1
+#, js-format
+msgid "%1$d fields · %2$d step(s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "payments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Active"
+msgstr ""
+
+#. translators: %d: unread
+#: build/admin.js:1
+#, js-format
+msgid "%d new"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conversion (30d)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shortcode"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shortcode copied."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Copy"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Updated"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form duplicated as a draft."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Duplicate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this form?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form deleted."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Also delete all its entries and uploaded files"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(no label)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Heading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Text block"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hidden field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a country…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose file"
+msgstr ""
+
+#: build/admin.js:1
+msgid "max"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sign here"
+msgstr ""
+
+#: build/admin.js:1
+msgid "no formula yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A 3-step wedding photography inquiry with date, venue, package choice with prices and a budget question"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Job application for a barista: availability, experience, CV upload and a consent checkbox"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Website quote request that asks for pages, features and shows an e-commerce question only for shops"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer satisfaction survey with NPS and a follow-up question for low scores"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI form draft"
+msgstr ""
+
+#. translators: 1: fields, 2: steps, 3: logic rules
+#: build/admin.js:1
+#, js-format
+msgid "%1$d fields · %2$d steps · %3$d with logic"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d automatic fixes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Logic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hidden when"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown when"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use this form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe your form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One sentence is enough. DEV3 AI builds the fields, steps, options, conditional logic and calculations. You review it before anything is saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "What should the form do?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Examples"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Steps"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Let DEV3 AI decide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Multi-step"
+msgstr ""
+
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Language"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect a Google Gemini API key to generate forms. Templates and the builder work without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form created as a draft. Review it, then set it to Active."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pick how you want to start. Everything can be changed in the builder."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Blank form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start with an empty canvas."
+msgstr ""
+
+#. translators: %d: fields
+#: build/admin.js:1
+#, js-format
+msgid "%d field"
+msgid_plural "%d fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: steps
+#: build/admin.js:1
+#, js-format
+msgid "%d step"
+msgid_plural "%d steps"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:1
+msgid "Import JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A form exported from another site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "That file is not a valid form export (JSON)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choices"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Advanced"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payments & calculations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Layout"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Single line text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Paragraph text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Number"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Website / URL"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dropdown"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Multi-select"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Multiple choice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Checkboxes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image choice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Yes / No toggle"
+msgstr ""
+
+#: build/admin.js:1
+msgid "File upload"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Star rating"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Net Promoter Score"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Opinion scale"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Slider"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Password"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Consent / GDPR"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Calculation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quantity"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom amount"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Order total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Divider"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search fields"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search 35 field types…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Click to add, or drag onto the form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Untitled step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move step up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move step down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Step settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove step (fields move to the previous step)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Drop fields here"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Drag a field from the list, or add one."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add field"
+msgstr ""
+
+#. translators: 1: field label, 2: field type
+#: build/admin.js:1
+#, js-format
+msgid "Edit %1$s (%2$s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Make it multi-step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is not"
+msgstr ""
+
+#: build/admin.js:1
+msgid "contains"
+msgstr ""
+
+#: build/admin.js:1
+msgid "does not contain"
+msgstr ""
+
+#: build/admin.js:1
+msgid "starts with"
+msgstr ""
+
+#: build/admin.js:1
+msgid "ends with"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is greater than"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is less than"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is at least"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is at most"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is empty"
+msgstr ""
+
+#: build/admin.js:1
+msgid "is filled in"
+msgstr ""
+
+#: build/admin.js:1
+msgid "this field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add fields above this one to use conditional logic."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use conditional logic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Action"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "when"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Match"
+msgstr ""
+
+#: build/admin.js:1
+msgid "all"
+msgstr ""
+
+#: build/admin.js:1
+msgid "any"
+msgstr ""
+
+#: build/admin.js:1
+msgid "of these match:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Yes / checked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No / unchecked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Operator"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Value"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove rule"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add rule"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One option per line"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use \"Label | value | price\" to set a value or price."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apply"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Separate values"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Prices"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose image"
+msgstr ""
+
+#. translators: %s: option label
+#: build/admin.js:1
+#, js-format
+msgid "Choose image for %s"
+msgstr ""
+
+#. translators: %d: option number
+#: build/admin.js:1
+#, js-format
+msgid "Option %d label"
+msgstr ""
+
+#. translators: %d: option number
+#: build/admin.js:1
+#, js-format
+msgid "Option %d value"
+msgstr ""
+
+#: build/admin.js:1
+msgid "value"
+msgstr ""
+
+#. translators: %d: option number
+#: build/admin.js:1
+#, js-format
+msgid "Option %d price"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove option"
+msgstr ""
+
+#. translators: %d: number
+#: build/admin.js:1
+#, js-format
+msgid "Option %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add option"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bulk edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "First choice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Second choice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Third choice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Disagree"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Agree"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How likely are you to recommend us?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add some helpful text for your visitors here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "I agree to the privacy policy."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Full width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Half (1/2)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Third (1/3)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Job title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Field ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used in merge tags {field:id}, formulas {id}, webhooks and exports. Renaming updates references."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Formula"
+msgstr ""
+
+#. translators: %s: ids
+#: build/admin.js:1
+#, js-format
+msgid "Unknown field: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use {field_id}, + - * / ( ), min, max, round(x, 2), if(condition, a, b). {_subtotal} is the sum of products and amounts."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Insert a field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Subtotal"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select a field to edit its settings, or add one from the list."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Step title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Description"
+msgstr ""
+
+#: build/admin.js:1
+msgid "this step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "General"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Field settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Heading text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Consent text (links allowed)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Content (basic HTML allowed)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Placeholder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Help text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Required"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One per line"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inline"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Grid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Price"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quantity of product"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not linked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The product price is multiplied by this quantity in the total."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Decimals"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Prefix"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suffix"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add to the order total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show the result to visitors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sum of selected products (times their quantity), custom amounts and calculations marked \"add to total\". This is the amount charged when payments are on."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Half and third widths stack on phones."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default value"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Merge tags: {user:email}, {user:display_name}, {query:utm_source}, {date}, {page_title}."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Maximum characters (0 = no limit)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Rows"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Min"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Number of stars"
+msgstr ""
+
+#: build/admin.js:1
+msgid "To"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low end label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "High end label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Earliest date"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Latest date"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Allowed file types"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Comma-separated extensions, e.g. pdf,jpg,png. Scripts and HTML are always blocked."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max size (MB)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max files"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Autofill role"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Helps paste-to-fill and browser autofill put the right data here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hide the label visually (still read by screen readers)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "CSS class"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Buttons & steps"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submit button"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next button"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Back button"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Progress indicator"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Progress bar"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Step names"
+msgstr ""
+
+#: build/admin.js:1
+msgid "None"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown when the form has more than one step."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Visitors get a private link (and an email if they entered one) to finish the form later. Drafts expire after 30 days."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save link text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Availability"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open from"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close at"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Maximum number of entries (0 = unlimited)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Message when closed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only logged-in users"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Message for logged-out visitors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Store entries in WordPress"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to only send notifications (payment forms always store entries)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Look & feel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Forms inherit your theme's fonts and colours."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show the form title above the form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Intro text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown above the first field. Basic HTML allowed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accent colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Buttons, focus rings and selected choices. Leave empty for the default blue."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Extra CSS class"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All fields"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entry link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payment total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Site name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Insert a merge tag"
+msgstr ""
+
+#. translators: %d: number
+#: build/admin.js:1
+#, js-format
+msgid "Confirmation %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conditional"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete confirmation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Name (admin only)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show a message"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Go to a page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Go to a URL"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Basic HTML and merge tags allowed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a page…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "URL"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Merge tags work here too, e.g. ?email={field:email}."
+msgstr ""
+
+#: build/admin.js:1
+msgid "use this confirmation"
+msgstr ""
+
+#. translators: %d: number
+#: build/admin.js:1
+#, js-format
+msgid "Notification %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send this email"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send to"
+msgstr ""
+
+#. translators: %s: merge tag
+#: build/admin.js:1
+#, js-format
+msgid "Comma-separated. {admin_email} or %s for the visitor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Comma-separated. {admin_email} for the site admin."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reply-to"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cc"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bcc"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Attach uploaded files"
+msgstr ""
+
+#: build/admin.js:1
+msgid "send this email"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirmations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The first confirmation whose conditions match is used."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conditional confirmation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add confirmation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Email notifications"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sent after each entry (for payment forms, after the payment completes)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Visitor confirmation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "We received your message"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Thanks for getting in touch! Here is a copy of what you sent:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No emails are sent for this form."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Website"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not connected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add the API key once in Settings → Integrations, then turn it on for any form."
+msgstr ""
+
+#. translators: %s: service
+#: build/admin.js:1
+#, js-format
+msgid "Send entries to %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Load lists"
+msgstr ""
+
+#: build/admin.js:1
+msgid "— not sent —"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tags (comma-separated)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Double opt-in (Mailchimp sends a confirmation email)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Web app / webhook URL (https)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send every entry"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marketing consent"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only send to Mailchimp / Brevo / HubSpot when this is checked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Always send"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Sheets, Zapier and webhooks always receive entries."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add or update audience members."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Audience ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create or update contacts and add them to a list."
+msgstr ""
+
+#: build/admin.js:1
+msgid "List ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create or update CRM contacts."
+msgstr ""
+
+#: build/admin.js:1
+msgid "One row per entry through a small Apps Script web app (no Google login needed on your site)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "See the documentation for the 10-line script to paste into your sheet."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Send entries to a \"Webhooks by Zapier\" catch hook and connect 6,000+ apps."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Paste the catch hook URL from your Zap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Webhooks"
+msgstr ""
+
+#: build/admin.js:1
+msgid "POST every entry as JSON or form data, signed with an HMAC header when you set a secret."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add webhook"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No webhooks yet."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete webhook"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Format"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Secret (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adds X-DEV3FB-Signature: sha256=HMAC(body)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "send this webhook"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Collect payments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Visitors are sent to a secure Stripe or PayPal checkout page after submitting. The amount is always recalculated on your server."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Take payment for this form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add something to charge for"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a product and total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use Product, Quantity, Custom amount or Calculation fields; the Order total field shows the sum."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Currency"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Amount to charge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Order total (automatic)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Description on the checkout page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Defaults to the form title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Test mode"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not set up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Offer card payment (Stripe Checkout)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add Stripe keys"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Offer PayPal"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add PayPal credentials"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The honeypot, time trap and rate limit work without AI. The AI spam shield and paste-to-fill need a Google Gemini API key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bot protection (no AI)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Invisible to people, no CAPTCHA."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Honeypot field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A hidden field only bots fill in. They get a fake \"thank you\"."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Minimum seconds to fill the form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submissions faster than this are treated as bots. 0 turns it off."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submissions per minute per visitor"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI Spam Shield"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reads each message like a person would: SEO pitches, scams and abuse are caught; real enquiries pass."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check submissions with DEV3 AI"
+msgstr ""
+
+#. translators: %d: percent
+#: build/admin.js:1
+#, js-format
+msgid "Spam threshold (%d%% = flagged)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "When spam is detected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Keep it in the Spam folder (no emails)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Block it and show a message"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Deliver it, but flag it"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Also stop abusive or threatening messages"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only text answers are checked; email addresses are reduced to their domain and phone numbers are never sent."
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI Paste-to-fill"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Visitors paste an email signature or message and DEV3 AI fills the empty fields. They review before sending."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show \"Paste your details\" on this form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Never fill this field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Optional: e.g. a free-text box visitors use themselves."
+msgstr ""
+
+#: build/admin.js:1
+msgid "option"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Translate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Labels, help texts, options, buttons and messages are translated in one go. Visitors see the form in their language automatically (site language, WPML or Polylang), or use [dev3fb_form id=\"…\" lang=\"de\"]."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your changes first: DEV3 AI translates the saved version of the form."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a language…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Gemini API key in API Config to use AI translation."
+msgstr ""
+
+#. translators: %s: language
+#: build/admin.js:1
+#, js-format
+msgid "DEV3 AI · %s translation"
+msgstr ""
+
+#. translators: %s: language
+#: build/admin.js:1
+#, js-format
+msgid "%s translation added. Save the form to publish it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use this translation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Translations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No translations yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The form is shown in its original language to everyone."
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d strings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Make optional"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Change label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Change placeholder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add help text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Change field type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move to a later step"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview fix"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI · suggested fix"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apply fix"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conversion funnel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Anonymous visits only: no field values or personal data are tracked."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Views"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Started"
+msgstr ""
+
+#. translators: %s: percent
+#: build/admin.js:1
+#, js-format
+msgid "%s of views"
+msgstr ""
+
+#. translators: %s: percent
+#: build/admin.js:1
+#, js-format
+msgid "%s of starts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submitted / viewed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where visitors give up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last field touched before leaving without submitting."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No drop-off data yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "It appears as visitors start and leave the form."
+msgstr ""
+
+#. translators: 1: count, 2: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$d visitors (%2$s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Steps reached"
+msgstr ""
+
+#. translators: %d: sessions
+#: build/admin.js:1
+#, js-format
+msgid "%d visitors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quick wins"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Rule-based checks of your funnel (no AI)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI conversion advice"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI reads the funnel and your fields, explains what causes drop-off and suggests fixes you can preview and apply."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your changes first."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Ask DEV3 AI again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get advice with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Emails & confirmations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Integrations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Spam & autofill"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Translate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Insights"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "That ID is empty or already used."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fields"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Step 1"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a field"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fix applied. Review it in the builder and save."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unsaved"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Saved"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft (hidden)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embed this form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use the \"DEV3 AI Form\" block in the block editor, or paste the shortcode into any page, widget, Elementor or WPBakery text element."
+msgstr ""
+
+#: build/admin.js:1
+msgid "PHP templates:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Download JSON (import on another site)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inbox"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unread"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Awaiting payment"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d entries updated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Every submission with DEV3 AI summaries, sentiment and lead scores."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Every entry already has DEV3 AI insights."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Analyze new entries"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d entries exported."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a form to export its entries."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Export CSV"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI is analyzing entries"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Analysis finished."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Name, email, any answer…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select all on this page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entry status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bulk actions"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d selected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mark read"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Analyze"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete permanently"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No entries here"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try another search."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submissions appear here as soon as visitors send a form."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select"
+msgstr ""
+
+#. translators: %d: entry
+#: build/admin.js:1
+#, js-format
+msgid "Select entry %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Payment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI: spam"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI: abusive"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Honeypot"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Too fast"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Rate limit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI unavailable"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Marked as not spam. The sender is trusted from now on."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirmed as spam."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submissions stopped in the last 30 days. Only hashes and a redacted excerpt are stored here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Blocked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Moved to spam"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Flagged"
+msgstr ""
+
+#: build/admin.js:1
+msgid "False positives"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Log"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Allowed (AI unavailable)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Spam log"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing caught yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bots and spam stopped by the honeypot, time trap, rate limit or DEV3 AI appear here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submission"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(no text)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Caught by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Score"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Review"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirm"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Confirmed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "When"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entries & privacy"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Defaults for every form. Each form has its own settings in the builder."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Emails"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your site name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From address"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use an address on your own domain for better delivery."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Signature for AI replies"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Anna from the Example Studio team"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI automation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Analyze every new entry automatically"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adds a summary, sentiment, intent and lead score in the background. You can always analyze entries by hand."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models, the monthly AI budget and the storefront AI switch are in API Config."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Test"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mailchimp → Profile → Extras → API keys (ends in -usXX)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key (v3)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Brevo → SMTP & API → API keys."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Private app access token"
+msgstr ""
+
+#: build/admin.js:1
+msgid "HubSpot → Settings → Integrations → Private apps (scope: crm.objects.contacts.write)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Sheets & Zapier"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No keys needed: paste the Apps Script web app URL or the Zapier catch hook URL in each form's Integrations tab."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Secret key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "sk_test_… for testing, sk_live_… for real payments. A restricted key with Checkout Sessions write access also works."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Webhook signing secret (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "whsec_… Confirms payments even if the visitor closes the tab before returning."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Webhook endpoint (event: checkout.session.completed):"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sandbox"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Client ID"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Secret"
+msgstr ""
+
+#: build/admin.js:1
+msgid "PayPal Developer → Apps & Credentials."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sandbox (test) mode"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete entries after (days, 0 = keep)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Store the visitor's IP address"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off by default for privacy."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conversion analytics"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Counts anonymous views, starts and drop-off per field. No cookies, no IPs, no answers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Maximum upload size (MB, all forms)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete all data when the plugin is uninstalled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "GDPR"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Entries are included in WordPress's \"Export personal data\" and \"Erase personal data\" tools (matched by email). A privacy policy snippet naming Google Gemini as processor is added under Settings → Privacy."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn the shield on per form (Spam & autofill tab). These limits apply to all forms."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI checks per minute per visitor"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI checks per day (whole site, 0 = no limit)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Deliver submissions when AI is unavailable (fail-open)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Skip the AI check for logged-in users"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Message for blocked submissions"
+msgstr ""
+
+#. translators: %s: link
+#: build/admin.js:1
+#, js-format
+msgid "Review caught submissions in %s."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open the log"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/block.js:1
+msgid "DEV3 AI Form"
+msgstr ""
+
+#: build/block.js:1
+msgid "Show a form built with DEV3 AI Form Builder."
+msgstr ""
+
+#: build/block.js:1
+msgid "form"
+msgstr ""
+
+#: build/block.js:1
+msgid "contact"
+msgstr ""
+
+#: build/block.js:1
+msgid "Choose a form…"
+msgstr ""
+
+#: build/block.js:1
+msgid "draft"
+msgstr ""
+
+#: build/block.js:1
+msgid "Automatic (site language)"
+msgstr ""
+
+#: build/block.js:1
+msgid "Form settings"
+msgstr ""
+
+#: build/block.js:1
+msgid "Edit this form in DEV3 AI Forms"
+msgstr ""
+
+#: build/block.js:1
+msgid "Create a form with DEV3 AI"
+msgstr ""
+
+#: build/block.js:1
+msgid "Choose a form to show here."
+msgstr ""
+
+#: build/block.js:1
+msgid "Create a new form"
+msgstr ""

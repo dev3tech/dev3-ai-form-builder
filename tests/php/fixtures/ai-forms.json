@@ -1,0 +1,622 @@
+[
+ {
+  "prompt": "A contact form for a dental clinic",
+  "ai": {
+   "title": "Contact the clinic",
+   "confirmation_message": "Thanks, we will call you back.",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "name",
+       "type": "name",
+       "label": "Full name",
+       "required": true
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true,
+       "width": "half"
+      },
+      {
+       "key": "phone",
+       "type": "phone",
+       "label": "Phone",
+       "required": false,
+       "width": "half"
+      },
+      {
+       "key": "reason",
+       "type": "select",
+       "label": "Reason for visit",
+       "required": true,
+       "options": [
+        "Check-up",
+        "Pain",
+        "Cleaning",
+        "Other"
+       ]
+      },
+      {
+       "key": "reason_other",
+       "type": "text",
+       "label": "Please describe",
+       "required": true,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "reason",
+          "op": "is",
+          "value": "Other"
+         }
+        ]
+       }
+      },
+      {
+       "key": "message",
+       "type": "textarea",
+       "label": "Message",
+       "required": false
+      },
+      {
+       "key": "consent",
+       "type": "consent",
+       "label": "Privacy",
+       "required": true,
+       "content": "I agree to be contacted."
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "3-step wedding photography inquiry with package prices",
+  "ai": {
+   "title": "Wedding inquiry",
+   "confirmation_message": "Congratulations! We'll be in touch.",
+   "steps": [
+    {
+     "title": "The day",
+     "fields": [
+      {
+       "key": "date",
+       "type": "date",
+       "label": "Wedding date",
+       "required": true
+      },
+      {
+       "key": "venue",
+       "type": "text",
+       "label": "Venue",
+       "required": true
+      },
+      {
+       "key": "guests",
+       "type": "number",
+       "label": "Guests",
+       "required": false,
+       "min": 1
+      }
+     ]
+    },
+    {
+     "title": "Package",
+     "fields": [
+      {
+       "key": "package",
+       "type": "product",
+       "label": "Package",
+       "required": true,
+       "options": [
+        "Essential",
+        "Full day",
+        "Destination"
+       ],
+       "option_prices": [
+        1200,
+        2400,
+        3900
+       ]
+      },
+      {
+       "key": "extras",
+       "type": "checkbox",
+       "label": "Extras",
+       "required": false,
+       "options": [
+        "Album",
+        "Second shooter",
+        "Drone"
+       ]
+      },
+      {
+       "key": "total",
+       "type": "total",
+       "label": "Estimated total",
+       "required": false
+      }
+     ]
+    },
+    {
+     "title": "You",
+     "fields": [
+      {
+       "key": "name",
+       "type": "name",
+       "label": "Names",
+       "required": true
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Job application for a barista with CV upload",
+  "ai": {
+   "title": "Barista application",
+   "confirmation_message": "Thanks for applying!",
+   "steps": [
+    {
+     "title": "About you",
+     "fields": [
+      {
+       "key": "name",
+       "type": "name",
+       "label": "Name",
+       "required": true
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true
+      },
+      {
+       "key": "phone",
+       "type": "phone",
+       "label": "Phone",
+       "required": true
+      }
+     ]
+    },
+    {
+     "title": "Experience",
+     "fields": [
+      {
+       "key": "years",
+       "type": "range",
+       "label": "Years of experience",
+       "required": false,
+       "min": 0,
+       "max": 20
+      },
+      {
+       "key": "availability",
+       "type": "checkbox",
+       "label": "Availability",
+       "required": true,
+       "options": [
+        "Weekdays",
+        "Weekends",
+        "Evenings"
+       ]
+      },
+      {
+       "key": "cv",
+       "type": "file",
+       "label": "CV",
+       "required": true
+      },
+      {
+       "key": "signature",
+       "type": "signature",
+       "label": "Signature",
+       "required": true
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "NPS survey with follow-up for low scores",
+  "ai": {
+   "title": "How did we do?",
+   "confirmation_message": "Thank you for your feedback.",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "nps",
+       "type": "nps",
+       "label": "How likely are you to recommend us?",
+       "required": true
+      },
+      {
+       "key": "why_low",
+       "type": "textarea",
+       "label": "What went wrong?",
+       "required": false,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "nps",
+          "op": "lte",
+          "value": "6"
+         }
+        ]
+       }
+      },
+      {
+       "key": "why_high",
+       "type": "textarea",
+       "label": "What did you love?",
+       "required": false,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "nps",
+          "op": "gte",
+          "value": "9"
+         }
+        ]
+       }
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email (optional)",
+       "required": false
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Website quote with ecommerce question only for shops",
+  "ai": {
+   "title": "Website quote",
+   "confirmation_message": "We'll send your quote within 2 days.",
+   "steps": [
+    {
+     "title": "Project",
+     "fields": [
+      {
+       "key": "type",
+       "type": "radio",
+       "label": "Type of site",
+       "required": true,
+       "options": [
+        "Business site",
+        "Online shop",
+        "Blog"
+       ]
+      },
+      {
+       "key": "products",
+       "type": "number",
+       "label": "How many products?",
+       "required": false,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "type",
+          "op": "is",
+          "value": "Online shop"
+         }
+        ]
+       }
+      },
+      {
+       "key": "pages",
+       "type": "number",
+       "label": "Number of pages",
+       "required": false
+      }
+     ]
+    },
+    {
+     "title": "Contact",
+     "fields": [
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true
+      },
+      {
+       "key": "budget",
+       "type": "select",
+       "label": "Budget",
+       "required": true,
+       "options": [
+        "<$2k",
+        "$2-5k",
+        "$5k+"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Price calculator for painting a room",
+  "ai": {
+   "title": "Painting estimate",
+   "confirmation_message": "Here is your estimate.",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "area",
+       "type": "number",
+       "label": "Wall area (m2)",
+       "required": true,
+       "min": 1
+      },
+      {
+       "key": "coats",
+       "type": "select",
+       "label": "Coats",
+       "required": true,
+       "options": [
+        "1",
+        "2",
+        "3"
+       ]
+      },
+      {
+       "key": "estimate",
+       "type": "calculation",
+       "label": "Estimate",
+       "required": false,
+       "formula": "{area} * {coats} * 4.5"
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Event registration with dietary needs",
+  "ai": {
+   "title": "Event sign-up",
+   "confirmation_message": "See you there!",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "name",
+       "type": "name",
+       "label": "Name",
+       "required": true
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true
+      },
+      {
+       "key": "diet",
+       "type": "multiple_choice",
+       "label": "Dietary needs",
+       "required": false,
+       "options": [
+        "None",
+        "Vegetarian",
+        "Vegan",
+        "Other"
+       ]
+      },
+      {
+       "key": "diet_other",
+       "type": "text",
+       "label": "Tell us more",
+       "required": false,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "diet",
+          "op": "is",
+          "value": "Other"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Newsletter signup",
+  "ai": {
+   "title": "Join our newsletter",
+   "confirmation_message": "You're in!",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "first_name",
+       "type": "text",
+       "label": "First name",
+       "required": false,
+       "width": "half"
+      },
+      {
+       "key": "email",
+       "type": "email",
+       "label": "Email",
+       "required": true,
+       "width": "half"
+      },
+      {
+       "key": "topics",
+       "type": "checkboxes",
+       "label": "Topics",
+       "required": false,
+       "options": [
+        "News",
+        "Offers"
+       ]
+      },
+      {
+       "key": "consent",
+       "type": "gdpr",
+       "label": "Consent",
+       "required": true,
+       "content": "Send me emails."
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 0
+ },
+ {
+  "prompt": "Support ticket with bad AI output",
+  "ai": {
+   "title": "Support",
+   "confirmation_message": "",
+   "steps": [
+    {
+     "title": "",
+     "fields": [
+      {
+       "key": "product",
+       "type": "dropdown",
+       "label": "Product",
+       "required": true,
+       "options": []
+      },
+      {
+       "key": "severity",
+       "type": "priority_picker",
+       "label": "Severity",
+       "required": true
+      },
+      {
+       "key": "details",
+       "type": "textarea",
+       "label": "Details",
+       "required": true,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "later_field",
+          "op": "is",
+          "value": "x"
+         }
+        ]
+       }
+      },
+      {
+       "key": "later_field",
+       "type": "text",
+       "label": "Later",
+       "required": false
+      }
+     ]
+    }
+   ]
+  },
+  "max_fixes": 4
+ },
+ {
+  "prompt": "Rental application, mostly ok",
+  "ai": {
+   "title": "Rental application",
+   "confirmation_message": "Thanks.",
+   "steps": [
+    {
+     "title": "Applicant",
+     "fields": [
+      {
+       "key": "name",
+       "type": "name",
+       "label": "Name",
+       "required": true
+      },
+      {
+       "key": "income",
+       "type": "number",
+       "label": "Monthly income",
+       "required": true
+      },
+      {
+       "key": "pets",
+       "type": "yes_no",
+       "label": "Do you have pets?",
+       "required": false
+      },
+      {
+       "key": "pet_type",
+       "type": "text",
+       "label": "Pet type",
+       "required": false,
+       "logic": {
+        "action": "show",
+        "match": "all",
+        "rules": [
+         {
+          "field": "pets",
+          "op": "is",
+          "value": "1"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "",
+     "fields": []
+    }
+   ]
+  },
+  "max_fixes": 1
+ }
+]

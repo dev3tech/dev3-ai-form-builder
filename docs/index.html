@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Form Builder for WordPress – Documentation</title>
+<style>
+:root{--b:#4f46e5;--t:#1f2328;--m:#4b5563;--l:#e5e7eb;--s:#f8fafc}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);background:#fff}
+header{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:48px 20px}header div{max-width:960px;margin:auto}header h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px)}header p{margin:0;opacity:.92}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--l);z-index:2}nav div{max-width:960px;margin:auto;padding:10px 20px;display:flex;gap:6px 16px;flex-wrap:wrap;font-size:14px}nav a{color:var(--b);text-decoration:none}
+main{max-width:960px;margin:auto;padding:24px 20px 64px}h2{margin-top:48px;padding-top:12px;border-top:1px solid var(--l)}h3{margin-top:28px}
+code,pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto}code{background:var(--s);padding:1px 5px;border-radius:4px}pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}th,td{border:1px solid var(--l);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--s)}
+.note{background:#eef2ff;border-left:4px solid var(--b);padding:12px 16px;border-radius:6px}img{max-width:100%;border:1px solid var(--l);border-radius:8px}.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+</style>
+</head>
+<body>
+<header><div><h1>DEV3 AI Form Builder for WordPress</h1><p>Version 1.0.0 · by DEV3 Technologies · Requires WordPress 6.0+, PHP 7.4+</p></div></header>
+<nav><div><a href="#install">Install</a><a href="#gemini">Gemini key</a><a href="#builder">Builder</a><a href="#fields">Fields</a><a href="#logic">Logic &amp; calculations</a><a href="#messages">Emails</a><a href="#entries">Entries</a><a href="#integrations">Integrations</a><a href="#payments">Payments</a><a href="#spam">Spam &amp; autofill</a><a href="#ai">DEV3 AI</a><a href="#embed">Embed</a><a href="#hooks">Hooks &amp; REST</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a></div></nav>
+<main>
+<div class="shots"><img src="screenshots/1-builder.png" alt="Builder"><img src="screenshots/2-entry-insights.png" alt="Entry insights"><img src="screenshots/5-multistep-frontend.png" alt="Multi-step form"></div>
+
+<h2 id="install">1. Installation</h2>
+<ol><li>In WordPress go to <b>Plugins → Add New → Upload Plugin</b>, choose <code>dev3-ai-form-builder.zip</code> and activate it.</li>
+<li>A new menu <b>DEV3 AI Forms</b> appears. Open it and click <b>New form</b>.</li>
+<li>Pick a template, a blank form, or <b>Describe a form</b> (needs a Gemini key).</li>
+<li>Embed the form with the <b>DEV3 AI Form</b> block or the shortcode shown under <b>Embed</b>.</li></ol>
+<p>No licence key or activation is needed. Updates are delivered as new zips through CodeCanyon.</p>
+
+<h2 id="gemini">2. Google Gemini API key</h2>
+<ol><li>Open <a href="https://aistudio.google.com/app/apikey">Google AI Studio → API keys</a> and create a key.</li>
+<li>In WordPress open <b>DEV3 AI Forms → API Config</b>, paste the key and save. It is encrypted (AES-256-GCM) and never sent to browsers.</li>
+<li>Optional: set a <b>monthly budget</b> (USD). AI pauses when it is reached; forms keep working.</li>
+<li>Alternatively define <code>define( 'DEV3FB_GEMINI_API_KEY', '…' );</code> in <code>wp-config.php</code>.</li></ol>
+<p>Default models: <code>gemini-2.5-flash</code> (fast tasks) and <code>gemini-2.5-pro</code>. You can pick other models from the live list. The storefront switch turns off visitor-facing AI (spam shield, paste-to-fill) without touching admin AI.</p>
+
+<h2 id="builder">3. The builder</h2>
+<ul><li><b>Build</b>: drag fields from the list (or click them) into the form; drag to reorder or between steps; use the arrows for keyboard/touch. Click a field to edit it on the right (on phones it opens as a panel).</li>
+<li><b>Steps</b>: "Make it multi-step" adds a step; each step has a title, description and its own logic.</li>
+<li><b>Settings</b>: button labels, progress (bar, step names, none), save-and-continue, open/close dates, entry limit, login-only, store entries, intro text, accent colour, CSS class.</li>
+<li><b>Field settings</b>: label, placeholder, help, required, width (full/half/third, stacked on phones), default value with merge tags, options with values/prices/images, min/max/step, file types and size, field ID (renaming updates logic, formulas and merge tags), autofill role, CSS class.</li>
+<li>Press <b>Ctrl/Cmd+S</b> to save. Unsaved changes are protected when you leave the page.</li></ul>
+
+<h2 id="fields">4. Field types (35)</h2>
+<table><tr><th>Group</th><th>Types</th></tr>
+<tr><td>Basic</td><td>Single line text, Paragraph, Email, Number, Phone, Website/URL</td></tr>
+<tr><td>Choices</td><td>Dropdown, Multi-select, Multiple choice, Checkboxes, Image choice, Country, Yes/No toggle</td></tr>
+<tr><td>Contact</td><td>Name (first + last), Address (street, line 2, city, state, postal code, country)</td></tr>
+<tr><td>Advanced</td><td>Date, Time, File upload, Signature, Star rating, NPS (0–10), Opinion scale, Slider, Colour, Password (stored hashed), Hidden, Consent/GDPR</td></tr>
+<tr><td>Payments &amp; calculations</td><td>Calculation, Product, Quantity, Custom amount, Order total</td></tr>
+<tr><td>Layout</td><td>Heading, Text/HTML block, Divider</td></tr></table>
+<p>Uploaded files are stored in <code>wp-content/uploads/dev3fb/</code> behind deny rules and are only downloadable by administrators from the entry screen. PHP, scripts, HTML and SVG are always blocked.</p>
+
+<h2 id="logic">5. Conditional logic &amp; calculations</h2>
+<p>Every field, step, confirmation, notification and webhook can be shown/used when <b>all</b> or <b>any</b> rules match. Operators: is, is not, contains, does not contain, starts with, ends with, greater/less than, at least/at most, is empty, is filled in. A field can only depend on earlier fields. Hidden fields are not validated and their values are discarded on the server.</p>
+<p>Calculation formulas use field IDs in braces:</p>
+<pre><code>round({area} * {quality}, 2)
+if({rush} == 1, {_subtotal} * 0.2, 0)
+max(0, {budget} - {discount})</code></pre>
+<p>Functions: <code>min, max, round(x, decimals), floor, ceil, abs, sqrt, pow, if(condition, a, b)</code>; comparisons return 1 or 0. Choice options use their price or numeric value; toggles are 1/0. <code>{_subtotal}</code> is the sum of products × quantities and custom amounts. The <b>Order total</b> field adds products, custom amounts and calculations marked "add to total". The browser shows live results; the server always recalculates.</p>
+
+<h2 id="messages">6. Emails &amp; confirmations</h2>
+<p>Notifications support conditional logic, Reply-To, Cc, Bcc, attachments and merge tags: <code>{field:ID}</code>, <code>{all_fields}</code>, <code>{form_title}</code>, <code>{entry_id}</code>, <code>{entry_url}</code>, <code>{payment_total}</code>, <code>{site_name}</code>, <code>{admin_email}</code>, <code>{date}</code>, <code>{page_url}</code>. Set the From name/address in Settings → General. Confirmations show a message, open a page or redirect to a URL (merge tags are URL-encoded). The first matching confirmation wins.</p>
+
+<h2 id="entries">7. Entries</h2>
+<p>Inbox, Unread, Starred, Awaiting payment, Spam and Trash; search across all answers; bulk mark read/star/spam/trash/delete/analyze; CSV export (UTF-8, Excel-safe, formula injection neutralised). The entry panel shows answers, files, payment, DEV3 AI insights, an AI reply composer, private notes, an activity log (emails, integrations, webhooks, payments) and buttons to resend. Retention can delete old entries automatically.</p>
+
+<h2 id="integrations">8. Integrations</h2>
+<table><tr><th>Service</th><th>Setup</th></tr>
+<tr><td>Mailchimp</td><td>API key in Settings → Integrations (ends in -usXX). Per form: audience, field mapping, tags, double opt-in.</td></tr>
+<tr><td>Brevo</td><td>v3 API key. Per form: list ID and mapping. Existing contacts are updated.</td></tr>
+<tr><td>HubSpot</td><td>Private app token with <code>crm.objects.contacts.write</code>. Contacts are created or updated by email.</td></tr>
+<tr><td>Google Sheets</td><td>Paste the web app URL of the Apps Script below.</td></tr>
+<tr><td>Zapier</td><td>Paste a "Webhooks by Zapier → Catch Hook" URL.</td></tr>
+<tr><td>Webhooks</td><td>JSON or form data, optional secret: header <code>X-DEV3FB-Signature: sha256=HMAC(body, secret)</code>.</td></tr></table>
+<p>"Marketing consent" sends to Mailchimp/Brevo/HubSpot only when a consent field is checked.</p>
+<h3>Google Sheets Apps Script</h3>
+<p>In your sheet open <b>Extensions → Apps Script</b>, paste this, then <b>Deploy → New deployment → Web app</b> (execute as you, access: anyone) and copy the URL.</p>
+<pre><code>function doPost(e) {
+  var data = JSON.parse(e.postData.contents);
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(data.sheet) || ss.insertSheet(data.sheet);
+  var keys = ['Entry ID', 'Submitted'].concat(Object.keys(data.values));
+  if (sheet.getLastRow() === 0) sheet.appendRow(keys);
+  var header = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  var row = header.map(function (h) {
+    return h === 'Entry ID' ? data.entry_id : h === 'Submitted' ? data.submitted_at : (data.values[h] || '');
+  });
+  sheet.appendRow(row);
+  return ContentService.createTextOutput('ok');
+}</code></pre>
+
+<h2 id="payments">9. Payments</h2>
+<ol><li>Add a Stripe secret key (<code>sk_test_…</code> to test) and/or PayPal client ID + secret (sandbox toggle) in Settings → Payments.</li>
+<li>In the form's <b>Payments</b> tab turn payments on, pick the currency and providers.</li>
+<li>Add Product/Quantity/Custom amount/Calculation fields and an Order total.</li></ol>
+<p>After submitting, visitors go to Stripe Checkout or PayPal. The entry waits as "Awaiting payment"; when the payment is confirmed (return page, or Stripe webhook <code>/wp-json/dev3fb/v1/payments/stripe</code> with the <code>checkout.session.completed</code> event) it moves to the inbox and notifications are sent. Zero-decimal currencies (JPY, KRW…) are handled.</p>
+
+<h2 id="spam">10. Spam protection &amp; paste-to-fill</h2>
+<ul><li><b>Without AI</b>: hidden honeypot (bots get a fake "thank you"), minimum fill time via a signed token, submissions per minute per visitor.</li>
+<li><b>DEV3 AI Spam Shield</b> (per form): threshold, action (keep in Spam folder, block with a message, or deliver flagged), abusive-message blocking. Site limits: checks per minute/day, fail-open or fail-closed, skip for logged-in users. Marking a log row "Not spam" trusts that sender and restores the entry.</li>
+<li><b>DEV3 AI Paste-to-fill</b> (per form): visitors paste a signature or message; only empty fields are filled and they can undo.</li></ul>
+
+<h2 id="ai">11. DEV3 AI features</h2>
+<h3>Describe your form</h3><p>Forms → Describe a form. Type one sentence, choose steps and language. DEV3 AI returns fields, options (with prices), steps, logic and formulas. The draft is validated and repaired (unknown types, logic pointing to later fields, invalid formulas) and every repair is listed. Nothing is saved until you click <b>Use this form</b>; it is created as a draft.</p>
+<h3>Entry intelligence</h3><p>Summary, sentiment, intent, category, urgency, language, tags and a 0–100 lead score. Analyze one entry, selected entries, all new entries (background job), or turn on automatic analysis in Settings. Without AI a rule-based score is used.</p>
+<h3>AI auto-replies</h3><p>Entry → Reply: choose a tone and add facts (prices, dates). DEV3 AI drafts the reply in the sender's language; you edit it and click <b>Send reply</b>. Nothing is sent automatically.</p>
+<h3>Conversion advice</h3><p>Form → Insights shows views, starts, submissions, steps reached and the field where visitors give up (anonymous, no answers stored), plus rule-based quick wins. "Get advice with DEV3 AI" explains the drop-off and suggests fixes; each fix is previewed as a draft and applied only when you accept it (then save the form).</p>
+<h3>Smart translation</h3><p>Form → Translate: pick a language. Labels, help texts, options, buttons, confirmations and validation messages are translated; merge tags are protected. Review/edit, accept, save. Visitors see the translation automatically (site locale, WPML or Polylang) or with <code>lang="de"</code> on the shortcode/block.</p>
+
+<h2 id="embed">12. Embedding</h2>
+<ul><li>Block editor: add the <b>DEV3 AI Form</b> block and pick a form (and language).</li>
+<li>Shortcode: <code>[dev3fb_form id="12"]</code> or <code>[dev3fb_form id="12" lang="fr"]</code> in Elementor, WPBakery, Divi, widgets or the classic editor.</li>
+<li>PHP: <code>&lt;?php echo do_shortcode( '[dev3fb_form id="12"]' ); ?&gt;</code></li>
+<li>Forms loaded later by JavaScript (popups): call <code>window.dev3fbInit()</code>.</li>
+<li>Theme styling: forms inherit fonts and colours. Override CSS variables on <code>.dev3fb</code>: <code>--dev3fb-accent</code>, <code>--dev3fb-radius</code>, <code>--dev3fb-field-bg</code>, <code>--dev3fb-border</code>, <code>--dev3fb-error</code>.</li></ul>
+
+<h2 id="hooks">13. Developer hooks &amp; REST API</h2>
+<table><tr><th>Hook</th><th>Type</th><th>Purpose</th></tr>
+<tr><td><code>dev3fb_validate( $errors, $values, $definition )</code></td><td>filter</td><td>Add custom validation errors (field id → message).</td></tr>
+<tr><td><code>dev3fb_entry_row( $row, $form )</code></td><td>filter</td><td>Change an entry before it is stored.</td></tr>
+<tr><td><code>dev3fb_entry_created( $entry, $form )</code></td><td>action</td><td>After an entry is stored.</td></tr>
+<tr><td><code>dev3fb_entry_delivered( $entry, $form, $summary )</code></td><td>action</td><td>After emails, webhooks and integrations ran.</td></tr>
+<tr><td><code>dev3fb_payment_completed( $entry, $provider )</code></td><td>action</td><td>When a payment is confirmed.</td></tr>
+<tr><td><code>dev3fb_submission_flagged( $decision, $row )</code></td><td>action</td><td>When the spam shield triggers.</td></tr>
+<tr><td><code>dev3fb_notification_email( $mail, $entry )</code></td><td>filter</td><td>Change an email (to, subject, body, headers, attachments).</td></tr>
+<tr><td><code>dev3fb_webhook_payload( $payload, $form, $entry )</code></td><td>filter</td><td>Change webhook/Zapier payloads.</td></tr>
+<tr><td><code>dev3fb_form_saved( $form_id, $definition )</code></td><td>action</td><td>After a form is saved.</td></tr>
+<tr><td><code>dev3fb_field_types</code>, <code>dev3fb_templates</code>, <code>dev3fb_countries</code></td><td>filter</td><td>Extend registries.</td></tr>
+<tr><td><code>dev3fb_skip_spam_check</code>, <code>dev3fb_spam_triggered</code>, <code>dev3fb_classify_system_prompt</code>, <code>dev3fb_parse_system_prompt</code></td><td>filter</td><td>Tune the spam shield and paste-to-fill.</td></tr>
+<tr><td><code>dev3fb_prompt_{id}</code> (form_generate, entry_insights, auto_reply, conversion_advice, translate, spam_check, paste_parse)</td><td>filter</td><td>Override AI prompts.</td></tr>
+<tr><td><code>dev3fb_token_ttl</code>, <code>dev3fb_draft_days</code>, <code>dev3fb_public_rate_limit</code></td><td>filter</td><td>Token lifetime, draft lifetime, public rate limits.</td></tr></table>
+<p>REST namespace <code>dev3fb/v1</code>. Admin routes (capability <code>manage_options</code> + REST nonce): <code>forms</code>, <code>forms/{id}</code>, <code>forms/{id}/duplicate|insights|advice|apply-fix|translate</code>, <code>templates</code>, <code>ai/form</code>, <code>entries</code>, <code>entries/{id}</code>, <code>entries/bulk|export|analyze</code>, <code>entries/{id}/file|analyze|reply-draft|reply|resend</code>, <code>dashboard</code>, <code>spam</code>, <code>credentials</code>, <code>integrations/test</code>. Public routes (same-origin + rate limits + signed form token): <code>submit</code> (multipart), <code>save</code>, <code>token</code>, <code>track</code>, <code>parse</code>, and the Stripe webhook <code>payments/stripe</code>.</p>
+
+<h2 id="privacy">14. Privacy</h2>
+<ul><li>The API key and integration/payment secrets are encrypted and never sent to the browser.</li>
+<li>Spam checks and insights send only text answers to Google Gemini; emails are reduced to their domain; phone numbers, passwords, files and signatures are never sent. Optional PII masking (API Config).</li>
+<li>IP addresses are not stored unless you enable it. Analytics use a random per-visit id, no cookies and no answers.</li>
+<li>Entries are included in WordPress's personal data export/erase tools. A privacy policy snippet naming Google Gemini is added under Settings → Privacy.</li>
+<li>Uninstalling removes everything only when "Delete all data when the plugin is uninstalled" is on.</li></ul>
+
+<h2 id="faq">15. FAQ</h2>
+<p><b>The AI buttons are disabled.</b> Add a Gemini key in API Config and check that AI is on and the monthly budget is not reached.</p>
+<p><b>Emails do not arrive.</b> Use an SMTP plugin and set a From address on your domain. The entry's activity log shows each send attempt.</p>
+<p><b>Payments stay "Awaiting payment".</b> Add the Stripe webhook (event <code>checkout.session.completed</code>) and signing secret so payments confirm even when visitors close the tab.</p>
+<p><b>Does it slow my site?</b> The front-end script is about 8 KB gzipped and loads only on pages with a form; no AI calls happen on page load.</p>
+<p><b>Can I move forms between sites?</b> Yes: Embed → Download JSON, then New form → Import JSON.</p>
+
+<h2 id="changelog">16. Changelog</h2>
+<p><b>1.0.0</b> – First release.</p>
+</main>
+</body>
+</html>

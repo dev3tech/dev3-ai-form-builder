@@ -1,0 +1,609 @@
+{
+ "compare": [
+  {
+   "op": "is",
+   "actual": "Other",
+   "value": "other",
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": "Other",
+   "value": "Others",
+   "expected": false
+  },
+  {
+   "op": "is",
+   "actual": " Yes ",
+   "value": "yes",
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": "",
+   "value": "",
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": [],
+   "value": "",
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": [
+    "a",
+    "b"
+   ],
+   "value": "B",
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": [
+    "a",
+    "b"
+   ],
+   "value": "c",
+   "expected": false
+  },
+  {
+   "op": "is_not",
+   "actual": "x",
+   "value": "y",
+   "expected": true
+  },
+  {
+   "op": "is_not",
+   "actual": "x",
+   "value": "X",
+   "expected": false
+  },
+  {
+   "op": "contains",
+   "actual": "Hello World",
+   "value": "wor",
+   "expected": true
+  },
+  {
+   "op": "contains",
+   "actual": "Hello",
+   "value": "",
+   "expected": false
+  },
+  {
+   "op": "contains",
+   "actual": [
+    "red",
+    "green"
+   ],
+   "value": "ree",
+   "expected": true
+  },
+  {
+   "op": "not_contains",
+   "actual": "Hello",
+   "value": "xyz",
+   "expected": true
+  },
+  {
+   "op": "not_contains",
+   "actual": "Hello",
+   "value": "ell",
+   "expected": false
+  },
+  {
+   "op": "starts_with",
+   "actual": "Website redesign",
+   "value": "web",
+   "expected": true
+  },
+  {
+   "op": "starts_with",
+   "actual": "redesign",
+   "value": "web",
+   "expected": false
+  },
+  {
+   "op": "ends_with",
+   "actual": "report.pdf",
+   "value": ".PDF",
+   "expected": true
+  },
+  {
+   "op": "ends_with",
+   "actual": "a",
+   "value": "abc",
+   "expected": false
+  },
+  {
+   "op": "gt",
+   "actual": "10",
+   "value": "9",
+   "expected": true
+  },
+  {
+   "op": "gt",
+   "actual": "9",
+   "value": "10",
+   "expected": false
+  },
+  {
+   "op": "gt",
+   "actual": "abc",
+   "value": "1",
+   "expected": false
+  },
+  {
+   "op": "gt",
+   "actual": "5",
+   "value": "x",
+   "expected": false
+  },
+  {
+   "op": "lt",
+   "actual": "3.5",
+   "value": "4",
+   "expected": true
+  },
+  {
+   "op": "gte",
+   "actual": "4",
+   "value": "4",
+   "expected": true
+  },
+  {
+   "op": "lte",
+   "actual": "4.01",
+   "value": "4",
+   "expected": false
+  },
+  {
+   "op": "lte",
+   "actual": "6",
+   "value": "6",
+   "expected": true
+  },
+  {
+   "op": "gt",
+   "actual": [
+    "5"
+   ],
+   "value": "4",
+   "expected": true
+  },
+  {
+   "op": "gt",
+   "actual": [
+    "5",
+    "6"
+   ],
+   "value": "4",
+   "expected": false
+  },
+  {
+   "op": "empty",
+   "actual": "",
+   "value": null,
+   "expected": true
+  },
+  {
+   "op": "empty",
+   "actual": [],
+   "value": null,
+   "expected": true
+  },
+  {
+   "op": "empty",
+   "actual": "0",
+   "value": null,
+   "expected": false
+  },
+  {
+   "op": "empty",
+   "actual": {
+    "first": "",
+    "last": ""
+   },
+   "value": null,
+   "expected": true
+  },
+  {
+   "op": "not_empty",
+   "actual": {
+    "first": "Ann",
+    "last": ""
+   },
+   "value": null,
+   "expected": true
+  },
+  {
+   "op": "not_empty",
+   "actual": false,
+   "value": null,
+   "expected": false
+  },
+  {
+   "op": "not_empty",
+   "actual": true,
+   "value": null,
+   "expected": true
+  },
+  {
+   "op": "is",
+   "actual": {
+    "first": "Ann",
+    "last": "Lee"
+   },
+   "value": "ann lee",
+   "expected": true
+  },
+  {
+   "op": "bogus",
+   "actual": "a",
+   "value": "a",
+   "expected": false
+  }
+ ],
+ "visible": [
+  {
+   "logic": null,
+   "values": {},
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": []
+   },
+   "values": {},
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": false,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     }
+    ]
+   },
+   "values": {
+    "a": "y"
+   },
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     }
+    ]
+   },
+   "values": {
+    "a": "x"
+   },
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     }
+    ]
+   },
+   "values": {
+    "a": "y"
+   },
+   "expected": false
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "hide",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     }
+    ]
+   },
+   "values": {
+    "a": "x"
+   },
+   "expected": false
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     },
+     {
+      "field": "b",
+      "op": "gt",
+      "value": "3"
+     }
+    ]
+   },
+   "values": {
+    "a": "x",
+    "b": "2"
+   },
+   "expected": false
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "any",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     },
+     {
+      "field": "b",
+      "op": "gt",
+      "value": "3"
+     }
+    ]
+   },
+   "values": {
+    "a": "z",
+    "b": "4"
+   },
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "any",
+    "rules": [
+     {
+      "field": "a",
+      "op": "is",
+      "value": "x"
+     },
+     {
+      "field": "b",
+      "op": "gt",
+      "value": "3"
+     }
+    ]
+   },
+   "values": {
+    "a": "z",
+    "b": "1"
+   },
+   "expected": false
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "hide",
+    "match": "any",
+    "rules": [
+     {
+      "field": "a",
+      "op": "empty"
+     }
+    ]
+   },
+   "values": {},
+   "expected": false
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "a",
+      "op": "nope",
+      "value": "x"
+     }
+    ]
+   },
+   "values": {
+    "a": "x"
+   },
+   "expected": true
+  },
+  {
+   "logic": {
+    "enabled": true,
+    "action": "show",
+    "match": "all",
+    "rules": [
+     {
+      "field": "missing",
+      "op": "is",
+      "value": ""
+     }
+    ]
+   },
+   "values": {},
+   "expected": true
+  }
+ ],
+ "evaluate": [
+  {
+   "definition": {
+    "steps": [
+     {
+      "id": "s1",
+      "fields": [
+       {
+        "id": "a"
+       },
+       {
+        "id": "b",
+        "logic": {
+         "enabled": true,
+         "action": "show",
+         "match": "all",
+         "rules": [
+          {
+           "field": "a",
+           "op": "is",
+           "value": "yes"
+          }
+         ]
+        }
+       },
+       {
+        "id": "c",
+        "logic": {
+         "enabled": true,
+         "action": "show",
+         "match": "all",
+         "rules": [
+          {
+           "field": "b",
+           "op": "not_empty"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "values": {
+    "a": "no",
+    "b": "filled",
+    "c": "x"
+   },
+   "fields": {
+    "a": true,
+    "b": false,
+    "c": false
+   },
+   "steps": {
+    "s1": true
+   }
+  },
+  {
+   "definition": {
+    "steps": [
+     {
+      "id": "s1",
+      "fields": [
+       {
+        "id": "a"
+       }
+      ]
+     },
+     {
+      "id": "s2",
+      "logic": {
+       "enabled": true,
+       "action": "show",
+       "match": "all",
+       "rules": [
+        {
+         "field": "a",
+         "op": "is",
+         "value": "1"
+        }
+       ]
+      },
+      "fields": [
+       {
+        "id": "b"
+       }
+      ]
+     }
+    ]
+   },
+   "values": {
+    "a": "",
+    "b": "x"
+   },
+   "fields": {
+    "a": true,
+    "b": false
+   },
+   "steps": {
+    "s1": true,
+    "s2": false
+   }
+  },
+  {
+   "definition": {
+    "steps": [
+     {
+      "id": "s1",
+      "fields": [
+       {
+        "id": "a"
+       }
+      ]
+     },
+     {
+      "id": "s2",
+      "logic": {
+       "enabled": true,
+       "action": "show",
+       "match": "all",
+       "rules": [
+        {
+         "field": "a",
+         "op": "is",
+         "value": "1"
+        }
+       ]
+      },
+      "fields": [
+       {
+        "id": "b"
+       }
+      ]
+     }
+    ]
+   },
+   "values": {
+    "a": "1",
+    "b": "x"
+   },
+   "fields": {
+    "a": true,
+    "b": true
+   },
+   "steps": {
+    "s1": true,
+    "s2": true
+   }
+  }
+ ]
+}

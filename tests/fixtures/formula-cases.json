@@ -1,0 +1,268 @@
+[
+ {
+  "formula": "1+2*3",
+  "vars": {},
+  "expected": 7,
+  "error": false
+ },
+ {
+  "formula": "(1+2)*3",
+  "vars": {},
+  "expected": 9,
+  "error": false
+ },
+ {
+  "formula": "-3+5",
+  "vars": {},
+  "expected": 2,
+  "error": false
+ },
+ {
+  "formula": "--3",
+  "vars": {},
+  "expected": 3,
+  "error": false
+ },
+ {
+  "formula": "10/4",
+  "vars": {},
+  "expected": 2.5,
+  "error": false
+ },
+ {
+  "formula": "10/0",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "10%3",
+  "vars": {},
+  "expected": 1,
+  "error": false
+ },
+ {
+  "formula": "-7%3",
+  "vars": {},
+  "expected": -1,
+  "error": false
+ },
+ {
+  "formula": "7%0",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "{a}*{b}",
+  "vars": {
+   "a": 3,
+   "b": 4
+  },
+  "expected": 12,
+  "error": false
+ },
+ {
+  "formula": "{a}+{missing}",
+  "vars": {
+   "a": 3
+  },
+  "expected": 3,
+  "error": false
+ },
+ {
+  "formula": "{a}",
+  "vars": {
+   "a": "abc"
+  },
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "round(2.345,2)",
+  "vars": {},
+  "expected": 2.35,
+  "error": false
+ },
+ {
+  "formula": "round(-2.5)",
+  "vars": {},
+  "expected": -3,
+  "error": false
+ },
+ {
+  "formula": "round(2.5)",
+  "vars": {},
+  "expected": 3,
+  "error": false
+ },
+ {
+  "formula": "round(1.005,2)",
+  "vars": {},
+  "expected": 1.01,
+  "error": false
+ },
+ {
+  "formula": "floor(2.9)",
+  "vars": {},
+  "expected": 2,
+  "error": false
+ },
+ {
+  "formula": "ceil(2.1)",
+  "vars": {},
+  "expected": 3,
+  "error": false
+ },
+ {
+  "formula": "abs(-4)",
+  "vars": {},
+  "expected": 4,
+  "error": false
+ },
+ {
+  "formula": "sqrt(16)",
+  "vars": {},
+  "expected": 4,
+  "error": false
+ },
+ {
+  "formula": "sqrt(-1)",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "pow(2,10)",
+  "vars": {},
+  "expected": 1024,
+  "error": false
+ },
+ {
+  "formula": "min(3,1,2)",
+  "vars": {},
+  "expected": 1,
+  "error": false
+ },
+ {
+  "formula": "max(3,1,2)",
+  "vars": {},
+  "expected": 3,
+  "error": false
+ },
+ {
+  "formula": "min()",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "if({a}>5, 100, 50)",
+  "vars": {
+   "a": 6
+  },
+  "expected": 100,
+  "error": false
+ },
+ {
+  "formula": "if({a}>5, 100, 50)",
+  "vars": {
+   "a": 5
+  },
+  "expected": 50,
+  "error": false
+ },
+ {
+  "formula": "{a}>=5",
+  "vars": {
+   "a": 5
+  },
+  "expected": 1,
+  "error": false
+ },
+ {
+  "formula": "{a}==5",
+  "vars": {
+   "a": 5
+  },
+  "expected": 1,
+  "error": false
+ },
+ {
+  "formula": "{a}!=5",
+  "vars": {
+   "a": 5
+  },
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "2<1",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "1.5e2+.5",
+  "vars": {},
+  "expected": 150.5,
+  "error": false
+ },
+ {
+  "formula": "",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "  ",
+  "vars": {},
+  "expected": 0,
+  "error": false
+ },
+ {
+  "formula": "1+",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "(1+2",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "foo(1)",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "1 $ 2",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "{a",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "1 2",
+  "vars": {},
+  "expected": null,
+  "error": true
+ },
+ {
+  "formula": "round({area}*{quality},2)",
+  "vars": {
+   "area": 12.5,
+   "quality": 20
+  },
+  "expected": 250,
+  "error": false
+ }
+]

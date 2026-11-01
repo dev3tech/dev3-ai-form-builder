@@ -1,0 +1,161 @@
+[
+ {
+  "name": "products with qty and calc add_to_total",
+  "fields": [
+   {
+    "id": "ticket",
+    "type": "product",
+    "options": [
+     {
+      "value": "Standard",
+      "price": 49
+     },
+     {
+      "value": "VIP",
+      "price": 129
+     }
+    ]
+   },
+   {
+    "id": "qty",
+    "type": "quantity",
+    "product": "ticket"
+   },
+   {
+    "id": "donation",
+    "type": "amount"
+   },
+   {
+    "id": "fee",
+    "type": "calculation",
+    "formula": "{_subtotal}*0.1",
+    "decimals": 2,
+    "add_to_total": true
+   },
+   {
+    "id": "total",
+    "type": "total"
+   }
+  ],
+  "values": {
+   "ticket": "VIP",
+   "qty": "2",
+   "donation": "10.5"
+  },
+  "visible": {},
+  "total": 295.35,
+  "calc": {
+   "fee": "26.85",
+   "total": "295.35"
+  }
+ },
+ {
+  "name": "hidden product ignored",
+  "fields": [
+   {
+    "id": "a",
+    "type": "product",
+    "price": 20,
+    "options": []
+   },
+   {
+    "id": "b",
+    "type": "product",
+    "price": 5,
+    "options": []
+   },
+   {
+    "id": "total",
+    "type": "total"
+   }
+  ],
+  "values": {
+   "a": "1",
+   "b": "1"
+  },
+  "visible": {
+   "b": false
+  },
+  "total": 20,
+  "calc": {
+   "total": "20.00"
+  }
+ },
+ {
+  "name": "choice numeric values in formula",
+  "fields": [
+   {
+    "id": "area",
+    "type": "number"
+   },
+   {
+    "id": "quality",
+    "type": "select",
+    "options": [
+     {
+      "value": "20"
+     },
+     {
+      "value": "35"
+     }
+    ]
+   },
+   {
+    "id": "extras",
+    "type": "checkbox",
+    "options": [
+     {
+      "value": "a",
+      "price": 5
+     },
+     {
+      "value": "b",
+      "price": 7
+     }
+    ]
+   },
+   {
+    "id": "est",
+    "type": "calculation",
+    "formula": "round({area}*{quality}+{extras},2)",
+    "decimals": 2
+   }
+  ],
+  "values": {
+   "area": "10",
+   "quality": "35",
+   "extras": [
+    "a",
+    "b"
+   ]
+  },
+  "visible": {},
+  "total": 0,
+  "calc": {
+   "est": "362"
+  }
+ },
+ {
+  "name": "toggle as 1/0",
+  "fields": [
+   {
+    "id": "rush",
+    "type": "toggle"
+   },
+   {
+    "id": "price",
+    "type": "calculation",
+    "formula": "100 + {rush}*50",
+    "decimals": 0
+   }
+  ],
+  "values": {
+   "rush": "1"
+  },
+  "visible": {},
+  "total": 0,
+  "calc": {
+   "price": "150"
+  }
+ }
+]
